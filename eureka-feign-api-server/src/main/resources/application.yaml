@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-feign-api-server
+server:
+  port: 9093
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:9091/eureka/
