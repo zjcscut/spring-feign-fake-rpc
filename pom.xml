@@ -17,6 +17,7 @@
         <encoding>UTF-8</encoding>
         <springcloud.version>Edgware.RELEASE</springcloud.version>
         <springboot.version>1.5.9.RELEASE</springboot.version>
+        <feign.okhttp.version>9.5.1</feign.okhttp.version>
         <mvn.compiler.version>3.6.2</mvn.compiler.version>
     </properties>
     <dependencyManagement>
@@ -42,6 +43,12 @@
                 <groupId>org.throwable</groupId>
                 <artifactId>eureka-feign-api</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-okhttp</artifactId>
+                <version>${feign.okhttp.version}</version>
             </dependency>
 
         </dependencies>

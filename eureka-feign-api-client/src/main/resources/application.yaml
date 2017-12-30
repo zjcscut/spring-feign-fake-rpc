@@ -7,3 +7,7 @@ eureka:
   client:
     service-url:
         defaultZone: http://localhost:9091/eureka/
+# 见源码FeignRibbonClientAutoConfiguration的import注解
+feign:
+  okhttp:
+     enabled: true
