@@ -8,6 +8,9 @@ eureka:
     service-url:
         defaultZone: http://localhost:9091/eureka/
 # 见源码FeignRibbonClientAutoConfiguration的import注解
+# 下面这两个注解没有提示,有点坑,feign.okhttp.enabled=true用于引入okhttp支持,feign.hystrix.enabled=true用于引入hystrix支持
 feign:
   okhttp:
+     enabled: true
+  hystrix:
      enabled: true

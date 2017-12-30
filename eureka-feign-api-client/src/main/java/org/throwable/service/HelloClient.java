@@ -9,6 +9,6 @@ import org.throwable.api.HelloService;
  * @description
  * @since 2017/12/29 12:24
  */
-@FeignClient(value = "eureka-feign-api-server")
+@FeignClient(value = "eureka-feign-api-server", fallback = HelloServiceFallback.class)
 public interface HelloClient extends HelloService {
 }
